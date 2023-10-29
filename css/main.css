@@ -73,3 +73,38 @@
     text-align: left;
   }
 }
+
+/* image flipper 
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
